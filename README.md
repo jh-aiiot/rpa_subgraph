@@ -3,7 +3,7 @@
 This repository contains source code of generating subgraph from a network.
 The generating operation focuses on trimming edges between the nodes.
 
-* Operation *
+* Operation
 1. Get resource data of all nodes.
 2. Generate a whole network.
 3. Convert the original network into a linegraph network.
