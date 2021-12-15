@@ -11,6 +11,6 @@ The generating operation focuses on trimming edges between the nodes.
 5. Re-convert the modified linegraph network into the orignal network scheme.
 
 The given condition can vary.
-*Default *condition : Leave only the links with all data above zero.
+Default condition : Leave only the links with all data above zero.
 
 The source code visualizes the resulting network.
