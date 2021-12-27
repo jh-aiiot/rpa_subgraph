@@ -1,5 +1,5 @@
 # Recommendation Subgraph Generation
-# Version 1.0
+# Version 1.1
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
 
