@@ -1,5 +1,5 @@
 # Recommendation Subgraph Generation
-# Version 1.1
+# Version 1.4
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
 
@@ -73,7 +73,8 @@ class Linegraph:
 
         # Initializing function
         self.line_graphing()
-        self.line_graph_trimming()
+        self.line_graph_trimming_mild()
+        self.line_graph_trimming_hard()
 
     def line_graphing(self):
         for s in range(self.num_entity):
@@ -89,7 +90,7 @@ class Linegraph:
                     self.line_resource_list.append(resource_list)
         return 0
 
-    def line_graph_trimming(self):
+    def line_graph_trimming_hard(self):
         num_line_graph = len(self.line_resource_list)
         num_line_graphs = len(self.line_entity_list)
         new_line_resource_list = []
@@ -104,11 +105,34 @@ class Linegraph:
             for r in range(self.num_resource):
                 if self.line_resource_list[ln][r][0] < 0:
                     done += 1
-                else:
-                    done += 0
             if done:
                 continue
             else:
+                new_line_resource_list.append(self.line_resource_list[ln])
+                new_line_entity_list.append(self.line_entity_list[ln])
+
+        self.line_resource_list = new_line_resource_list
+        self.line_entity_list = new_line_entity_list
+
+        return 0
+    
+    def line_graph_trimming_mild(self):
+        num_line_graph = len(self.line_resource_list)
+        num_line_graphs = len(self.line_entity_list)
+        new_line_resource_list = []
+        new_line_entity_list = []
+
+        # Error!
+        if num_line_graph != num_line_graphs:
+            print("There is a problem in making line graphs.")
+            
+        activated_diff = numpy.logical_and(relu(diff).tolist(), numpy.ones(num_rscTypes)).astype(numpy.int8)
+
+        for ln in range(num_line_graph):
+            for r in range(self.num_resource):
+                
+                self.line_resource_list[ln]=numpy.logical_and(relu(self.line_resource_list[ln][r]).tolist(), numpy.ones(num_resource)).astype(numpy.int8)
+
                 new_line_resource_list.append(self.line_resource_list[ln])
                 new_line_entity_list.append(self.line_entity_list[ln])
 
