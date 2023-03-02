@@ -197,12 +197,21 @@ for e in range(entity_num):
     # "A" is a type of entity.
     # Use capital case alphabet to show different types of entity.
     # We only make one type of entity in this program.
+
+    A = Entity(3,                           # Number of VD Resources
+               2,                           # Number of ED Resources
+=======
     A = Entity(2,                           # Number of VD Resources
                3,                           # Number of ED Resources
+
                # Selection limit for VD Resources
-               [[0, 128, 256, 512], [0, 4, 8, 16, 32]],
+               [[0, 128, 256, 512], [0, 4, 8, 16, 32], [0, 128, 256, 512, 1024]],
                # Selection Probability for the VD Resources and the ED Resources
+
+               [[0.3, 0.3, 0.2, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.3, 0.7], [0.4, 0.6]])
+=======
                [[0.3, 0.3, 0.2, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.3, 0.7], [0.4, 0.6], [0.5, 0.5]])
+
     temp = A.set_resource()
     entity_list.append(temp)
 
