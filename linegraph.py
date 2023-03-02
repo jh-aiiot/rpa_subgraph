@@ -2,6 +2,9 @@
 # Version 1.4
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
+# contributor
+=======
+# contributor Dongkwan Ryu, Hyeonbae Byeon
 
 # Notation
 # VD : Value-described
@@ -13,6 +16,7 @@ import pandas
 import numpy
 import networkx
 import matplotlib.pyplot
+import matplot
 
 from pyvis.network import Network
 
@@ -200,6 +204,14 @@ for e in range(entity_num):
                [[0, 128, 256, 512], [0, 4, 8, 16, 32], [0, 4, 8, 16, 32]],
                # Selection Probability for the VD Resources and the ED Resources
                [[0.3, 0.3, 0.2, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.3, 0.7], [0.4, 0.6]])
+
+    A = Entity(3,                           # Number of VD Resources
+               3,                           # Number of ED Resources
+
+               # Selection limit for VD Resources
+               [[0, 128, 256, 512], [0, 4, 8, 16, 32], [0, 128, 256, 512, 1024]],
+               # Selection Probability for the VD Resources and the ED Resources
+               [[0.3, 0.3, 0.2, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.2, 0.1, 0.2, 0.3, 0.2], [0.3, 0.7], [0.4, 0.6], [0.5, 0.5]])
     temp = A.set_resource()
     entity_list.append(temp)
 
