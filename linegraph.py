@@ -21,6 +21,7 @@ import matplot
 from pyvis.network import Network
 
 # Settings
+entity_style = 5                        # 'entity_style' is the total number of entities' style.
 entity_num = 50                         # 'entity_num' is the total number of entities.
 entity_list = []                        # 'entity_list' is the list of all entities.
 random.seed(1)                          # Seed is given for reproducibility
