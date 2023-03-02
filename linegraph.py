@@ -3,7 +3,7 @@
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
 # contributor
-=======
+========
 # contributor Dongkwan Ryu, Hyeonbae Byeon
 
 # Notation
