@@ -2,7 +2,7 @@
 # Version 1.4
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
-# contributor Dongkwan Ryu
+# contributor Dongkwan Ryu, Hyeonbae Byeon
 
 # Notation
 # VD : Value-described
