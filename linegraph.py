@@ -2,6 +2,7 @@
 # Version 1.4
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
+#contributor
 
 # Notation
 # VD : Value-described
@@ -13,6 +14,7 @@ import pandas
 import numpy
 import networkx
 import matplotlib.pyplot
+import matplot
 
 from pyvis.network import Network
 
