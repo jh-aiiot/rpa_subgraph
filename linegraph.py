@@ -2,6 +2,8 @@
 # Version 1.4
 # Programmed by Joohyun Kim
 # AIIoT Lab, Ajou University, Republic of Korea
+# contributor
+=======
 # contributor Dongkwan Ryu, Hyeonbae Byeon
 
 # Notation
@@ -14,6 +16,7 @@ import pandas
 import numpy
 import networkx
 import matplotlib.pyplot
+import matplot
 
 from pyvis.network import Network
 
