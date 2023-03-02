@@ -4,7 +4,7 @@
 # AIIoT Lab, Ajou University, Republic of Korea
 # contributor
 ========
-# contributor Dongkwan Ryu, Hyeonbae Byeon
+# contributor Dongkwan Ryu, Hyeonbae Byeon, Ahhyun Kim
 
 # Notation
 # VD : Value-described
